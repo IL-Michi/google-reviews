@@ -1,4 +1,12 @@
 plugin.tx_googlereviews_pi1 {
+ view {
+        # cat=plugin.tx_tx_googlereviews_pi1/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:google_reviews/Resources/Private/Templates/
+        # cat=plugin.tx_tx_googlereviews_pi1/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:google_reviews/Resources/Private/Partials/
+        # cat=plugin.tx_tx_googlereviews_pi1/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:google_reviews/Resources/Private/Layouts/
+    }
     # cat=plugin.tx_tx_googlereviews_pi1/api/1; type=string; label=Google Place API endpoint
     apiEndpoint = https://maps.googleapis.com/maps/api/place/details/
 
